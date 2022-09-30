@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    gap: 10px;
+    margin: 0px auto;
+    padding: 20px;
+    width: 75%;
+    grid-template-columns: 1fr;
+    color:rgb(105, 195, 195);
+    background-color: rgb(28, 70, 70);
+
+}
+
+.col-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-2 {
+        grid-template-columns: 1fr;
+        margin: 0px auto;  
+    }
+  }
